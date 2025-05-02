@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+
+
+[project]
+name = "anomaly-detection-in-HEP"
+version = "0.1.0"
+description = "this is a project for anomaly detection in high energy physics"
+readme = "README.md"
+dependencies = [
+    "numpy>=2.2.5",
+    "torch>=2.7.0",
+]
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
